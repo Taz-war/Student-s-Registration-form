@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 span {
+            color: orange;
+        }
+
+        div {
+            display: block;
+        }
+
+        .main {
+            width: 1000px;
+            height: 750px;
+            align-self: center;
+            padding: 50px;
+            margin-left: 350px;
+            box-shadow: 2px 2px 5px 5px rgb(0 0 0 / 20%);
+        }
+
+        label {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        select {
+            width: 95%;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+
+        input {
+            width: 94%;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+
+        .text {
+            width: 95%;
+        }
+
+        .half {
+            width: 49%;
+            float: left;
+            border-right: 1px solid #ddd;
+            padding: 0px;
+        }
+
+        .rest_half {
+            width: 49.5%;
+            float: left;
+            padding-left: 20px;
+            /* border-left: 1px solid #ddd; */
+        }
+
+        .file {
+            border: none;
+        }
+
+        .day {
+            width: 33.33%;
+            float: left;
+        }
+
+        .month {
+            width: 33.33%;
+            float: left;
+        }
+
+        .year {
+            width: 33.33%;
+            float: left;
+        }
+
+        .male {
+            width: auto;
+        }
+
+        fieldset {
+            width: 94.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <form action="">
+            <h1><span>Student Registration Form</span></h1>
+            <hr><br>
+            <h3>Please enter relevent information</h3><br>
+            <p><small>Mandatory Field*</small></p>
+            <div class="half">
+                <label for="">District(<small>Institute District: Where you want to do your course</small>)*</label><br>
+                <select name="district" id="">
+                    <option value="--Select One--" disabled selected>--Select One--</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Chittagong">Chittagong</option>
+                    <option value="Comilla">Comilla</option>
+                    <option value="Noakhali">Noakhali</option>
+                </select>
+                <label for="">Course*</label><br>
+                <select name="district" id="">
+                    <option value="--Select One--" disabled selected>--Select One--</option>
+                    <option value="web">Web Design & Development-2022(2022,july)</option>
+                    <option value="graphics">Graphics Design-2022(2022,july)</option>
+                    <option value="marketing">Digital Marketing-2022(2022,july)</option>
+                </select>
+                <label for="">Student Name*</label><br>
+                <input type="text"><br>
+                <label for="">Father's Name*</label><br>
+                <input type="text"><br>
+                <label for="">Mother's Name*</label><br>
+                <input type="text"><br>
+                <fieldset>
+                    <legend>Death of Birth*</legend>
+                    <div>
+                        <div class="day">
+                            <label for="day">Day</label>
+                            <select name="" id="">
+                                <option value="--Select One--" disabled selected>--Select One--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+
+                            </select>
+
+                        </div>
+                        <div class="month">
+                            <label for="month">Month</label>
+                            <select>
+                                <option value="--Select One--" disabled selected>--Select One--</option>
+                                <option value="">January</option>
+                                <option value="">February</option>
+                                <option value="">March</option>
+                                <option value="">April</option>
+                                <option value="">May</option>
+                                <option value="">June</option>
+                                <option value="">July</option>
+                                <option value="">August</option>
+                                <option value="">September</option>
+                                <option value="">October</option>
+                                <option value="">November</option>
+                                <option value="">December</option>
+                            </select>
+
+                        </div>
+                        <div class="year">
+                            <label for="year">Year</label>
+                            <select>
+                                <option value="--Select One--" disabled selected>--Select One--</option>
+                                <option value="">2000</option>
+                                <option value="">2001</option>
+                                <option value="">2002</option>
+                                <option value="">2003</option>
+                                <option value="">2004</option>
+                                <option value="">2005</option>
+                                <option value="">2006</option>
+                                <option value="">2007</option>
+                                <option value="">2008</option>
+                                <option value="">2009</option>
+                                <option value="">2010</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset><br>
+                <div class="gender">
+                    <label for="gender">Gender*</label>
+                    <input type="radio" name="Female" id="" class="male">
+                    <label for="Female">Male</label>
+                    <input type="radio" name="Female" id="" class="male">
+                    <label for="Hamed">Female</label><br>
+                    <label for="">Physically Handicapped*</label>
+                    <input type="radio" name="handicape" id="" class="male">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="handicape" id="" class="male">
+                    <label for="No">No</label>
+                </div>
+                <br>
+                <label for="email">Email*</label><br>
+                <input type="email" name="email" id="email"><br>
+                <p><small>(e.g: example@mail.com)</small></p>
+                <label for="phone">Phone (Must be 11 Digits)*</label><br>
+                <input type="number" name="number" id="number">
+                <p><small>(e.g:0155123456)</small></p>
+            </div>
+            <div class="rest_half">
+                <label for="id_no">Identification Type*</label>
+                <select name="id_no" id="">
+                    <option value="--Select One--" disabled selected>--Select One--</option>
+                    <option value="Dhaka">Birth Certificate No</option>
+                    <option value="Chittagong">NID No</option>
+                </select>
+                <p><small>Identification No. (Must be 10 digits for new NID or 17 digits for old NID. If your National
+                        ID is 13 digits, then
+                        please add your birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)*</small></p>
+                <input type="number" name="number" id="" class="text"><br>
+                <label for="district">Home District*</label><br>
+                <select name="district" id="">
+                    <option value="--Select One--" disabled selected>--Select One--</option>
+                    <option value="">Chittagong</option>
+                    <option value="">Dhaka</option>
+                    <option value="">Sylhet</option>
+                    <option value="">Dinajpur</option>
+                    <option value="">Rajshahi</option>
+                    <option value="">Rangpur</option>
+                    <option value="">Khulna</option>
+                    <option value="">Barishal</option>
+                </select><br>
+                <label for="">Upazila</label><br>
+                <select name="upazila" id="">
+                    <option value="">Chittagong</option>
+                    <option value="">Rauzan</option>
+                    <option value="">Chandanish</option>
+                    <option value="">Fatehabaad</option>
+                </select>
+                <br>
+                <label for="">Village/House No./Road No./Other Alternative*</label><br>
+                <input type="text" name="" id="" class="text"><br>
+                <label for="">Post Office*</label><br>
+                <input type="text" name="" id="" class="text"><br>
+                <label for="">Educational Qualification* (Higher Level)</label><br>
+                <select name="edu" id="edu">
+                    <option value="--Select One--" disabled selected>--Select One--</option>
+                    <option value="">Higher Scondery/Equivalent</option>
+                    <option value="">Bachelor</option>
+                    <option value="">Master</option>
+                    <option value="">PHD</option>
+                </select><br>
+                <label for="gender">Have any computer?</label>
+                <input type="radio" name="Female" id="" class="male">
+                <label for="yes">Yes</label>
+                <input type="radio" name="Female" id="" class="male">
+                <label for="no">No</label><br>
+                <label for="">Photograph*</label><br>
+                <input type="file" name="file" id="file1" class="file"><br>
+                <p><small>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</small></p><br>
+                <label for="">Signature*</label><br>
+                <input type="file" name="file2" id="file2" class="file"><br>
+                <p><small>(File type must be jpg or jpeg or png. Maximum file size 2 mb.)</small></p><br>
+
+                <button>Submit Data</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
